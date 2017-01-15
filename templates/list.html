@@ -1,0 +1,10 @@
+<!doctype html>
+<title> uploaded files </title>
+<table>
+{% for item in uploaded_items %}
+<tr><td><a href=/download/{{ item }}>{{ item }}</a></td></tr>
+{% endfor %}
+</table>
+<table>
+<tr><td><a href=/>Upload More files</a></td></tr>
+</table>
